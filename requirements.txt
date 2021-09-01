@@ -1,0 +1,6 @@
+dlib==19.22.0
+numpy==1.21.2
+pip==21.2.4
+scipy==1.7.1
+setuptools==57.4.0
+wheel==0.37.0
