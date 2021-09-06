@@ -1,0 +1,23 @@
+<!doctype html>
+<title> The Identification System of Users </title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<nav>
+	<h1 class='h1'>The Identification System of Users</h1>
+</nav>
+<section class="content">
+	<p>
+	Please enter the id of user-card and apply the photo from camera.
+	</p>
+	<form method='post' enctype="multipart/form-data">
+		<input type="text" placeholder="Enter the id." class="text1" name="user_id" required>
+		<input type="file" name="user_photo" required>
+		<input type="submit" name="submit_button" value="Submit" class="button1">
+	</form>
+	{% if out %}
+		<p>{{out}}</p>
+	{% endif %}
+	{% for message in get_flashed_messages() %}
+		<div class="flash">{{message}}</div>
+	{% endfor %}
+</section>
