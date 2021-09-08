@@ -1,5 +1,7 @@
-notes.txt
-jupyterenv/
-*.pyc
+venv/
+instance/
 __pycache__/
+*.pyc
 *.jpg
+*.json
+notes.txt
