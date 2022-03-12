@@ -1,4 +1,4 @@
-# Identification  
+# face-identification  
 This project is the web-application that identifies user using face-recognition  
 Instruction:  
 1) change app/scheme.sql to insert values OR you can use your database in instance
